@@ -56,7 +56,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {menu2.map((item) => (
-          <text name={item.name} ing={item.ing} cost={item.cost} />
+          <h1> Наименование : {item.name}  <br></br>  Цена = { item.cost} </h1>
+          
         ))}
 
         <p>
