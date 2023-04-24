@@ -6,59 +6,59 @@ function App() {
   let menu2 = [
 
     {
-      "name": "Поджарка",
-      "ing": [
+      name: "Поджарка",
+      ing: [
         "potato",
         "farsh",
         "onion"
       ],
-      "cost": 150
+      cost: 150
 
     },
     {
-      "name": "Лагман",
-      "ing": [
+      name: "Лагман",
+      ing: [
         "makaron",
         "potato",
         "beef"
       ],
-      "cost": 200
+      cost: 200
     },
     {
-      "name": "Пицца",
-      "ing": [
+      name: "Пицца",
+      ing: [
         "cheese",
         "chicken",
         "onion",
         "testo"
       ],
-      "cost": 300
+      cost: 300
     },
     {
-      "name": "Овощной салат",
-      "ing": [
+      name: "Овощной салат",
+      ing: [
         "tomato",
         "cucumber"
       ],
-      "cost": 60
+      cost: 60
     },
     {
-      "name": "Капустные котлеты",
-      "ing": [
+      name: "Капустные котлеты",
+      ing: [
         "cabbage",
         "onion"
       ],
-      "cost": 90
+      cost: 90
     }
   ]
 
   return (
     <div className="App">
       <header className="App-header">
-        {menu2.map((item)=>(
-          <Image name={item.name} ing={item.ing} cost={item.cost} />
+        {menu2.map((item) => (
+          <text name={item.name} ing={item.ing} cost={item.cost} />
         ))}
-       
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
