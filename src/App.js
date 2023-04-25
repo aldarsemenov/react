@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Vivod from './components/index'
 
 function App() {
 
@@ -55,10 +56,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {menu2.map((item) => (
-          <h1> Наименование : {item.name}  <br></br>  Цена = { item.cost} </h1>
+        {menu2.map((item) => 
+          <Vivod  name={item.name} cost={item.cost}  />
           
-        ))}
+        )}
 
         <p>
           Edit <code>src/App.js</code> and save to reload.
