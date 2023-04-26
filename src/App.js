@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Vivod from './components/index'
+import Vivod from './components/menu/index'
 
 function App() {
 
