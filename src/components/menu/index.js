@@ -7,32 +7,32 @@ const Menu = ({ onItemBuy }) => {
 
     {
       name: "Поджарка",
-      ing: ["potato", "farsh", "onion"],
+      ing: ["Свинина", "лук", "зелень"],
       cost: 150,
       image: "/assets/podjarka.jpeg"
 
     },
     {
       name: "Лагман",
-      ing: ["makaron", "potato", "beef"],
+      ing: ["Макароны", "картошка", "говядина"],
       cost: 200,
       image: "/assets/lagman.jpeg"
     },
     {
       name: "Пицца",
-      ing: ["cheese", "chicken", "onion", "testo"],
+      ing: ["Тесто", "курица", "лук", "помидор"],
       cost: 300,
       image: "/assets/pizza.jpeg"
     },
     {
       name: "Овощной салат",
-      ing: ["tomato", "cucumber"],
+      ing: ["Помидор", "огурец"],
       cost: 60,
       image: "/assets/salat.jpeg"
     },
     {
       name: "Котлеты",
-      ing: ["cabbage", "onion"],
+      ing: ["Кабачок", "лук"],
       cost: 90,
       image: "/assets/kotleti.jpeg"
     }

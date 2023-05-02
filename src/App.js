@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App ">
-<div className="mx-auto text-6xl conteiner bg-sky-600 p-10">Кафе у Алдара </div>
+<div className="italic mx-auto text-6xl conteiner bg-sky-600 p-10">Кафе</div>
       <div className="mx-auto container flex flex-row-reverse text-right">
         <div>
           <div className="text-xl">Корзина</div>
