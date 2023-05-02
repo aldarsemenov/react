@@ -5,7 +5,7 @@ const Menu = ({ onItemBuy }) => {
 
   let menu = [
 
-    {
+    { 
       name: "Поджарка",
       ing: ["Свинина", "лук", "зелень"],
       cost: 150,
