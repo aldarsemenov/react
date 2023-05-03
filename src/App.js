@@ -6,11 +6,11 @@ import { useState } from 'react';
 function App() {
 
   const [cart, setCart] = useState([])
-
+  const korzina=cart.reduce((sum,item) => (sum +=item.cost),0 );
   const addToCard = item => {
     setCart([...cart, item])
   }
-
+  localStorage.setItem('test',korzina)
 
   return (
     <div className="App ">
@@ -20,7 +20,7 @@ function App() {
           <div className="border-8 p-1 container">
           <div className="font-bold text-xl">Корзина</div>
           <div>Количество {cart.length} </div>
-          <div>Сумма {cart.reduce((sum,item) => (sum +=item.cost),0 )} </div>
+          <div>Сумма {localStorage.getItem('test')} </div>
           </div>
         </div>
       </div>
