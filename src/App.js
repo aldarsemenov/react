@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Menu from './components/Menu';
+import Menu from './pages/MenuPage';
 import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import Mainmenu from './components/Mainmenu';
 
 function App() {
 
@@ -13,9 +15,11 @@ function App() {
   
 
   return (
-    <div className="App ">
-<div className="italic mx-auto text-6xl conteiner bg-sky-600 p-10">Кафе</div>
+    <div className=" container mx-auto">
+<div className="italic mx-auto text-6xl container bg-sky-600 p-10">Кафе</div>
+      <Mainmenu/>
       <div className="mx-auto container flex flex-row-reverse text-right">
+      
         <div>
           <div className="border-8 p-1 container">
           <div className="font-bold text-xl">Корзина</div>
@@ -24,7 +28,9 @@ function App() {
           </div>
         </div>
       </div>
-      <Menu onItemBuy={(item)=> addToCard(item)}> </Menu>
+      
+      <Outlet></Outlet>
+      
     </div >
   );
 }
