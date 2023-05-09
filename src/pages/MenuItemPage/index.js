@@ -7,7 +7,7 @@ const MenuItemPage = () => {
     return (
     <> 
     <h1>   {menuItem.name} </h1> 
-    <img src={menuItem.image}></img>
+    <img className="  object-cover h-96 w-192" src={menuItem.image}></img>
     <p>{menuItem.ing.join(", ")}</p>
     </>
     )

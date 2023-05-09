@@ -8,7 +8,7 @@ const MenuCard = ({ item, onClickBuy = () => { } }) => {
 
     return (
         <div className="rounded overflow-hidden shadow-lg ">
-            <img className="object-fill h-48 w-96" src={item.image} />
+            <img className=" object-scale-down h-48 w-96" src={item.image} />
             <Link to = {`/catalog/${item.id}`}>
             <div className={"text-2xl p-2 font-bold px-" + style.card}>{item.name}</div>
             </Link>

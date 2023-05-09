@@ -3,7 +3,7 @@ import './App.css';
 import Menu from './pages/MenuPage';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import Mainmenu from './components/Mainmenu';
+import MainMenu from './components/Mainmenu';
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className=" container mx-auto">
 <div className="italic mx-auto text-6xl container bg-sky-600 p-10">Кафе</div>
-      <Mainmenu/>
+      <MainMenu/>
       <div className="mx-auto container flex flex-row-reverse text-right">
       
         <div>
