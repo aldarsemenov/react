@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import style from "./Menucard.module.css";
 
-const Menucard = ({ item, onClickBuy = () => { } }) => {
+const MenuCard = ({ item, onClickBuy = () => { } }) => {
     const ingrigients = (
         <div className="">{item.ing.join(", ")}</div>
     );
@@ -27,4 +27,4 @@ const Menucard = ({ item, onClickBuy = () => { } }) => {
     );
 };
 
-export default Menucard;
+export default MenuCard;

@@ -1,6 +1,6 @@
 import { Link, Outlet, createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import Aboutpage from "../pages/AboutPage";
+import AboutPage from "../pages/AboutPage";
 import Menu from "../pages/MenuPage";
 import ContactsPage from "../pages/ContactsPage";
 import MenuItemPage from "../pages/MenuItemPage";
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
                 children: [
                     {
                         path: "",
-                        element: <Aboutpage />,
+                        element: <AboutPage />,
                     },
 
                     {

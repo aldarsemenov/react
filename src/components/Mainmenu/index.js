@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const Mainmenu =() =>{
+const MainMenu =() =>{
     let menuItems= [
         {title: "Главная", link : "/"},
         {title: "О нac", link:"/about"}
@@ -17,4 +17,4 @@ const Mainmenu =() =>{
     );
     
 }
-export default Mainmenu;
+export default MainMenu;
