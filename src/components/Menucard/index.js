@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import style from "./Menucard.module.css";
+import { addToCart } from "../../store/slices/cartSlice";
+import { useDispatch } from "react-redux";
 
-const MenuCard = ({ item, onClickBuy = () => { } }) => {
+const MenuCard = ({ item }) => {
+    const dispatch= useDispatch();
     const ingrigients = (
         <div className="">{item.ing.join(", ")}</div>
     );
@@ -16,7 +19,7 @@ const MenuCard = ({ item, onClickBuy = () => { } }) => {
             <div >{ingrigients}</div>
             <div className="font-bold p-2 container flex flex-row-reverse text-right">Стоимость : {item.cost}</div>
            
-            <button onClick={() => onClickBuy(item)} class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button onClick={() =>dispatch( addToCart(item))} class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Добавить в корзину
             </button>
 
