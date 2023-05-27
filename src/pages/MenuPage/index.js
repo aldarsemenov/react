@@ -3,6 +3,7 @@ import Menucard from "../../components/Menucard";
 import { useDispatch, useSelector } from "react-redux";
 import { loadMenu } from "../../store/slices/menuSlice";
 import { useEffect } from "react";
+import LoadingError from "../../components/LoadingError";
 
 
 const Menu = () => {
@@ -22,7 +23,7 @@ const Menu = () => {
         </div>
       )}
       {menu.loading == "pending" && <div className="flex justify-center items-center h-[70vh]">Загрузка.....</div>}
-      {menu.loading == "reject" && <div className="flex justify-center items-center h-[70vh]">Произошла ошибка при загрузке данных</div>}
+      {menu.loading == "rejected" && <LoadingError message="Произошла ошибка при загрузке данных меню"/>}
     </>
   );
 }
