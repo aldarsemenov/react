@@ -4,6 +4,8 @@ import AboutPage from "../pages/AboutPage";
 import Menu from "../pages/MenuPage";
 import ContactsPage from "../pages/ContactsPage";
 import MenuItemPage from "../pages/MenuItemPage";
+import CartProvider from "../components/providers/CartProvider";
+import CartPage from "../pages/CartPage";
 
 
 const router = createBrowserRouter([
@@ -13,12 +15,20 @@ const router = createBrowserRouter([
         children: [
             { path: "/", element: <Menu /> },
             {
-                path:"catalog/:id",
-                element: < MenuItemPage/>,
+                path: "catalog/:id",
+                element: < MenuItemPage />,
+            },
+
+            {
+                path: "cart",
+                element: < CartProvider>
+                    <CartPage />
+                </CartProvider>
+
             },
             {
                 path: "about",
-                element: <Outlet/>,
+                element: <Outlet />,
                 children: [
                     {
                         path: "",
@@ -27,7 +37,7 @@ const router = createBrowserRouter([
 
                     {
                         path: "contacts",
-                        element: <ContactsPage/>
+                        element: <ContactsPage />
                     }
                 ]
             },
